@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Display</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      table {
+          position: relative;
+          border-collapse: collapse;
+          width: 60%;
+          max-width: 100%;
+  
+          margin: auto;
+          overflow-x: scroll;
+          
+      }
+      table, th, td,tr {
+        padding: 10px;
+        border-bottom: 1% white;
+        border-right: 22px white;
+          justify-content: center;
+          text-align: center;
+      }
+      table1
+      {
+        padding: 10px;
+        border-bottom: 10px;
+        border-right: 22px;
+        border: 1px solid rgb(255, 0, 0);
+        justify-content: center;
+        text-align: center;
+      }
+      th1, td1 {
+    width: 30px;
+    border-radius: 40px;
+  }
+      th, td,tr {
+          padding: 20px;
+          text-align: right;
+          
+      }
+      th {
+          background-color: #4CAF50;
+          color: rgb(243, 3, 3);
+      }
+      .container { 
+        width: 1%;
+        height: 1%;
+        position:fixed;
+        margin-top: 12%;
+        margin-left: 1%;
+        border: 3px solid rgb(255, 255, 255); 
+  }
+      .vertical-center {
+        margin: 0;
+        max-width: 100%;
+        max-height: 10%; 
+                 
+          top: 50%;
+          -ms-transform:translateX(-80%);
+           transform:translateX(-80%);
+        }
+      .vertical-center img{
+        margin-left: 20%;
+      }
+  </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo" onclick="location.href='index.html#home'">
+        <img src="images/logo.png" style="width: 150px; height: 80" />
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html"><b>Home</b></a>
+        </li>
+        <li>
+          <a href="#popupabout"><b>About us</b></a>
+        </li>
+        <li>
+          <a href="#popupcontact"><b>Contact</b></a>
+        </li>
+      </ul>
+    </nav>
+   <table>
+    <tr>
+      <td>
+        <a href="#popup1">
+          <div class="card">
+            <img
+              src="TEMA 1 TAMAT CUK TANPA PSD/Tema 1 Button/15 16/1dari5.png" 
+              alt="Card 1" style="width: 80%;"
+            />
+            <div class="card-l"></div>
+          </div>
+        </a>
+      </td>
+      <td>
+        <a href="#popup2">
+          <div class="card">
+            <img
+              src="TEMA 1 TAMAT CUK TANPA PSD/Tema 1 Button/15 16/2dari5.png "
+              alt="Card 2" style="width: 80%;"
+            />
+            <div class="card-l"></div>
+          </div>
+        </a>
+      </td>
+      <td>
+        <a href="#popup3">
+          <div class="card">
+            <img
+              src="TEMA 1 TAMAT CUK TANPA PSD/Tema 1 Button/15 16/3dari5.png"
+              alt="Card 3" style="width: 80%;"
+            />
+            <div class="card-l"></div>
+          </div>
+        </a>
+      </td>
+    </tr>
+    </table>
+    <table>
+     <tr>
+      <td>
+        <a href="#popup4">
+          <div class="card">
+            <img
+              src="TEMA 1 TAMAT CUK TANPA PSD/Tema 1 Button/15 16/4dari5.png" 
+              alt="Card 4" style="width: 50%; margin-left: auto; margin-bottom: 0; margin-top: 0;"
+            />
+          </div>
+        </a>
+      </td>
+      <td style="justify-content: left;">
+        <a href="#popup5">
+          <div class="card">
+            <img
+              src="TEMA 1 TAMAT CUK TANPA PSD/Tema 1 Button/15 16/5dari5.png"
+              alt="Card 5"  style="width: 50%; margin-right: auto; margin-bottom: 0; margin-top: 0;" 
+            />
+          </div>
+        </a>
+      </td>
+      </tr>      
+      <tr>
+      <div class="container">
+        <div class="vertical-center">
+        <a href="tema-1.html">
+          <img src="images/back.png" width="110" height="110"/>
+        </a>
+      </div>
+        </div>
+      </tr>
+    </table>
+    <div class="popup" id="popup1">
+      <div class="popup-content">
+        <div class="slideshow" id="slideshow1">
+          <div class="slide">
+            <img src="PROJECT TANPA PSD/TEMA 1 TAMAT CUK/13/131/1 circular input.png" />
+          </div>
+        </div>
+        <a href="#" class="popup-close">&times;</a>
+      </div>
+    </div>
+
+    <div class="popup" id="popup2">
+      <div class="popup-content">
+        <div class="slideshow" id="slideshow2">
+          <div class="slide">
+            <img
+              src="PROJECT TANPA PSD/TEMA 1 TAMAT CUK/13/132/2 Sharing Platform.png"
+              alt="Slide 2"
+            />
+          </div>
+        </div>
+        <a href="#" class="popup-close">&times;</a>
+      </div>
+    </div>
+
+    <div class="popup" id="popup3">
+      <div class="popup-content">
+        <div class="slideshow" id="slideshow3">
+          <div class="slide">
+            <img
+              src="PROJECT TANPA PSD/TEMA 1 TAMAT CUK/13/133/3. PRODUCT AS A SERVICE.png"
+              alt="Slide 2"
+            />
+          </div>
+        </div>
+        <a href="#" class="popup-close">&times;</a>
+      </div>
+    </div>
+
+    <div class="popup" id="popup4">
+      <div class="popup-content">
+        <div class="slideshow" id="slideshow4">
+          <div class="slide">
+            <img
+              src="PROJECT TANPA PSD/TEMA 1 TAMAT CUK/13/134/4 PRODUCT USE.png"
+              alt="Slide 2"
+            />
+          </div>
+        </div>
+        <a href="#" class="popup-close">&times;</a>
+      </div>
+    </div>
+
+    <div class="popup" id="popup5">
+      <div class="popup-content">
+        <div class="slideshow" id="slideshow5">
+          <div class="slide">
+            <img
+              src="PROJECT TANPA PSD/TEMA 1 TAMAT CUK/13/135/5 RESOURCE RECOVERY.png"
+              alt="Slide 2"
+            />
+          </div>
+        </div>
+        <a href="#" class="popup-close">&times;</a>
+      </div>
+    </div>
+
+    <script src="script1.js"></script>
+
+    <div class="popup" id="popupabout">
+      <div class="popup-content">
+        <div class="slideshow" id="slideshow6">
+          <div class="slide">
+            <img src="images/About.png" />
+          </div>
+        </div>
+        <a href="#" class="popup-close">&times;</a>
+      </div>
+    </div>
+
+    <div class="popup" id="popupcontact">
+      <div class="popup-content">
+        <div class="slideshow" id="slideshow7">
+          <div class="slide">
+            <img src="images/Contact us.png" />
+          </div>
+        </div>
+        <a href="#" class="popup-close">&times;</a>
+      </div>
+    </div>
+  </body>
+</html>
